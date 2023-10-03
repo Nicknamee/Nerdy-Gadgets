@@ -35,6 +35,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="image/logo.jpeg" alt="Nerdy Gadgets" width="100">
+            </a>
             <div class="d-flex justify-content-center align-items-center flex-grow-1">
                 <ul class="navbar-nav">
                     <li class="nav-item">
