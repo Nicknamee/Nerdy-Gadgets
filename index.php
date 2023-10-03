@@ -113,8 +113,8 @@
     </div>
 </div>
 <!-- Review -->
-<h1 class="text-center">Reviews van onze klanten</h1>
-<div class="container review-section">
+<h1 class="text-center reviewh1">Reviews van onze klanten</h1>
+<div class="container review-section review">
     <div class="row">
         <div class="col-md-4">
             <div class="review-card">
@@ -154,7 +154,7 @@
                 </blockquote>
             </div>
             <div class="col-md-6">
-                <img src="image/tandwiel.png" alt="Image" class="quote-image">
+                <img src="image/lamp.png" alt="Image" class="quote-image">
             </div>
         </div>
     </div>

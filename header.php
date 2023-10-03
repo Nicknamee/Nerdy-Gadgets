@@ -38,19 +38,19 @@
             </a>
             <div class="d-flex justify-content-center align-items-center flex-grow-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item navbar2">
                         <a class="nav-link" href="#">Games</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar2">
                         <a class="nav-link" href="#">Gadgets</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar2">
                         <a class="nav-link" href="#">Yep</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar2">
                         <a class="nav-link" href="#">Sale</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar2">
                         <a class="nav-link" href="#">New Releases</a>
                     </li>
                 </ul>
