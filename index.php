@@ -15,8 +15,31 @@
         </div>
     </div>
 </div>
+<div class="container text-slider">
+    <div id="textCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p class="slider-text">Altijd een snelle levering!</p>
+            </div>
+            <div class="carousel-item">
+                <p class="slider-text">Niet goed? Geld terug!</p>
+            </div>
+            <div class="carousel-item">
+                <p class="slider-text">Heel veel korting op je producten!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#textCarousel').carousel({
+            interval: 1500
+        });
+    });
+</script>
 <h1 class="text-center">Aanbevolen producten</h1>
-<div class="container mt-5 box1">
+<div class="container mt-10 box1">
     <div class="col-md-10">
         <div class="row">
             <!--Producten -->

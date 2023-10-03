@@ -48,6 +48,34 @@
         border-color: royalblue;
     }
 }
+     /* Add your custom styles here */
+ .text-slider {
+     background-color: #f7f7f7; /* Background color for the slider */
+     padding: 20px 0; /* Add padding as needed */
+     text-align: center;
+ }
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.active.carousel-item {
+    display: block;
+}
+
+.slider-text {
+    font-size: 24px;
+    opacity: 0; /* Hide text by default */
+    transition: opacity 0.5s; /* Add a smooth transition effect */
+}
+
+.carousel-item.active .slider-text {
+    opacity: 1; /* Show text for the active slide */
+}
 /* Producten*/
 .box1 {
     padding-left: 180px;
