@@ -112,6 +112,20 @@
         </div>
     </div>
 </div>
+<div class="quote">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <blockquote class="quotetext">
+                    “Wij zijn Nerdygadgets. We zijn trots op onze producten en geloven in kwaliteit. In ieder huis vindt een product van Nerdygadgets zijn thuis. Ondanks onze grootte zien klanten ons als kleinschalig en betrokken. Persoonlijk klantcontact staat bij ons hoog in het vaandel.”
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <img src="image/lamp.png" alt="Image" class="quote-image">
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Review -->
 <h1 class="text-center reviewh1">Reviews van onze klanten</h1>
 <div class="container review-section review">
@@ -141,20 +155,6 @@
                 <div class="review-text">
                     "Als een echte geek is dit wel echt een paradijs voor mij zoveel spullen waarvan ik alleen durfde van te dromen"
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="quote">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <blockquote class="quotetext">
-                    “Wij zijn Nerdygadgets. We zijn trots op onze producten en geloven in kwaliteit. In ieder huis vindt een product van Nerdygadgets zijn thuis. Ondanks onze grootte zien klanten ons als kleinschalig en betrokken. Persoonlijk klantcontact staat bij ons hoog in het vaandel.”
-                </blockquote>
-            </div>
-            <div class="col-md-6">
-                <img src="image/lamp.png" alt="Image" class="quote-image">
             </div>
         </div>
     </div>
