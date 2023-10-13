@@ -5,8 +5,11 @@
 }
 /* NAVBAR2 */
 .navbar2 a{
+    color: white;
     font-size: 20px;
+    margin-top: 0;
 }
+
 /* Banner */
 .typewriter-container {
     background-image: url('../image/background.jpg');
