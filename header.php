@@ -14,20 +14,20 @@
 <!--Nav bar 1 (bovenste)-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Nerdy Gadgets</a>
+        <a class="navbar-brand" href="index.php">Nerdy Gadgets</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Help</a>
+                    <a class="nav-link" href="help.php">Help</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
             </ul>
         </div>
@@ -45,13 +45,13 @@
                         <a class="nav-link" href="#">Gadgets</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Yep</a>
+                        <a class="nav-link" href="#">Producten</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Sale</a>
+                        <a class="nav-link" href="#">Aanbiedingen</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">New Releases</a>
+                        <a class="nav-link" href="#">Nieuw!</a>
                     </li>
                 </ul>
             </div>
