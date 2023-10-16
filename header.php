@@ -45,7 +45,7 @@
                         <a class="nav-link" href="#">Gadgets</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Producten</a>
+                        <a class="nav-link" href="producten.php">Producten</a>
                     </li>
                     <li class="nav-item navbar2">
                         <a class="nav-link" href="#">Aanbiedingen</a>
