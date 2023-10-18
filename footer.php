@@ -21,9 +21,7 @@
     </div>
 
     <div class="footerBottom">
-        <p>Copyright &copy;2022; Designed <span class="designer">Nerdy Gadgets Team 4</span></p>
+        <p>Copyright &copy;2023; Designed <span class="designer">Nerdy Gadgets Team 4</span></p>
 
     </div>
 </footer>
-</body>
-</html>
