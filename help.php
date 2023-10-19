@@ -5,7 +5,7 @@
     ?>
 </head>
 <body>
-<h1> Help pagina</h1>
+<h1> Help pagina3\</h1>
 <?php
 include('footer.php');
 ?>

@@ -54,3 +54,63 @@ hr {
     margin: 1em 0;
     padding: 1rem;
 }
+
+.filter-container {
+    width: 250px;
+    background: #007bff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 100%;
+    margin-top: 6.9rem;
+    margin-right: 2rem;
+}
+
+.category-filter h3 {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+.price-filter {
+    background: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.price-range {
+    display: flex;
+    align-items: center;
+}
+
+.range-label {
+    margin: 0 10px;
+}
+
+.min-price,
+.max-price {
+    width: 50px;
+}
+
+.filter-button {
+    background: royalblue;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.category-filter input {
+    width: 20px;
+    height: 20px;
+}
+
+.father {
+    display: flex;
+    justify-content: center;
+}
