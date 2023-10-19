@@ -3,9 +3,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nerdy Gadgets</title>
+<link rel="stylesheet" href="CSS/index.css">
 <?php
 include('header.php'); //-- Header --//
-include ('connect.php'); //-- Database connectie --//
 ?>
 <body>
 <div class="typewriter-container">

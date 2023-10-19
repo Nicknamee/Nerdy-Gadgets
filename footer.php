@@ -1,3 +1,5 @@
+<link href="CSS/footer.css" rel="stylesheet">
+
 <footer>
     <div class= "footerContainer">
         <div class="socialIcons">
@@ -16,10 +18,7 @@
 
             </ul>
         </div>
-
-
     </div>
-
     <div class="footerBottom">
         <p>Copyright &copy;2023; Designed <span class="designer">Nerdy Gadgets Team 4</span></p>
 

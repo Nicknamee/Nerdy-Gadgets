@@ -1,8 +1,8 @@
-<!--Bootstrap CSS -->
+
+<!--Bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href=CSS/index.css>
-<link rel="stylesheet" href="CSS/footer.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="CSS/index.css">
 <!--Font // Google Font connectie -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
     <!--Navbar 2 (onderste)-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container">
-                <img src="image/logopng.png" alt="Nerdy Gadgets" width="180" class="logo">
+                <img src="../image/logopng.png" alt="Nerdy Gadgets" width="180" class="logo">
             <div class="d-flex justify-content-center align-items-center flex-grow-1">
                 <ul class="navbar-nav">
                     <li class="nav-item navbar2">
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#">Gadgets</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="producten.php">Producten</a>
+                        <a class="nav-link" href="products/producten.php">Producten</a>
                     </li>
                     <li class="nav-item navbar2">
                         <a class="nav-link" href="#">Aanbiedingen</a>
