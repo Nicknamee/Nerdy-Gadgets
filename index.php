@@ -38,7 +38,7 @@ include('header.php'); //-- Header --//
         $('#textCarousel').carousel({
             interval: 1500
         });
-    });x
+    });
 </script>
 <h1 class="text-center">Aanbevolen producten</h1>
 <div class="container mt-10 box1">
