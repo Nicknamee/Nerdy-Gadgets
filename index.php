@@ -41,77 +41,33 @@ include('header.php'); //-- Header --//
     });
 </script>
 <h1 class="text-center">Aanbevolen producten</h1>
-<div class="container mt-10 box1">
-    <div class="col-md-10">
-        <div class="row">
-            <!--Producten -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="producten/product1.png" class="card-img-top product-img" alt="Playstation 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Playstation 5</h5>
-                        <p class="card-text">Mooie playstation.</p>
-                        <p class="card-text">€1500.00</p>
-                        <a href="#" class="btn btn-primary">Toevoegen</a>
+<div class="containerProduct container">
+    <div class="productList">
+        <?php
+        include('connect.php');
+        $query = "SELECT * from product WHERE id IN (1, 23, 30, 2) LIMIT 4";
+        $result = $conn->query($query);
+
+        foreach ($result as $row) {
+            $productName = $row['name'];
+            $productPrice = $row['price'];
+            $productImage = $row['image'];
+
+            echo "
+                    <div class='productClass'>
+                        <a href='../index.php'/>
+                            <img class='productImg' src='../product_images/{$productImage}.jpg' alt='{$productName}'>
+                            <div class='productName'>{$productName}</div>
+                        </a>
+                        <div class='cart-button'>
+                            <button class='fa fa-shopping-cart buttonName'></button>
+                            <span class='productPrice'>€ {$productPrice}</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="producten/product2.png" class="card-img-top product-img" alt="Playstation 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Playstation 4</h5>
-                        <p class="card-text">Mooie Playstation</p>
-                        <p class="card-text">€500.00</p>
-                        <a href="#" class="btn btn-primary">Toevoegen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="producten/product3.png" class="card-img-top product-img" alt="Playstation 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Xbox One</h5>
-                        <p class="card-text">Xbox One</p>
-                        <p class="card-text">€990.99</p>
-                        <a href="#" class="btn btn-primary">Toevoegen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src=producten/product4.png class="card-img-top product-img" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Nintendo Switch</h5>
-                        <p class="card-text">Goedkope prijs</p>
-                        <p class="card-text">€500.00</p>
-                        <a href="#" class="btn btn-primary">Toevoegen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="producten/product5.png" class="card-img-top product-img" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Nintendo Switch Lite</h5>
-                        <p class="card-text">Een switch maar dan Lite</p>
-                        <p class="card-text">€100.00</p>
-                        <a href="#" class="btn btn-primary">Toevoegen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="producten/product6.jpg" class="card-img-top product-img" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Last of Us</h5>
-                        <p class="card-text">Goeie game.</p>
-                        <p class="card-text">€500.00</p>
-                        <a href="#" class="btn btn-primary">Toevoegen</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                ";
+        }
+        $conn->close();
+        ?>
     </div>
 </div>
 <div class="quote">
@@ -137,7 +93,7 @@ include('header.php'); //-- Header --//
                 <div class="review-rating">5.0</div>
                 <div class="review-author">Deez</div>
                 <div class="review-text">
-                    "Geweldige winkel, veel winkels in mijn leven gezien maar dit is één van de beste!"
+                    "Geweldige winkel, veel winkels in mijn leven gezien maar dit is één van de beste! Ik kom graag terug de volgende keer."
                 </div>
             </div>
         </div>
