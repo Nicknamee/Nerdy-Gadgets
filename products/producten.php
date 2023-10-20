@@ -65,7 +65,7 @@
 
             echo "
                     <div class='productClass'>
-                        <a href='../index.php'/>
+                        <a href='../Productpagina.php'/>
                             <img class='productImg' src='../product_images/{$productImage}.jpg' alt='{$productName}'> <!-- Foto id uit de database halen en img folder-->
                             <div class='productName'>{$productName}</div> <!-- Product naam -->
                         </a>

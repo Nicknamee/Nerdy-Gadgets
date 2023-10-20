@@ -31,7 +31,7 @@
     <!--Navbar 2 (onderste)-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container">
-                <img src="../image/logopng.png" alt="Nerdy Gadgets" width="180" class="logo">
+                <img src="../image/logopng.png" alt="Nerdy Gadgets" class="logo">
             <div class="d-flex justify-content-center align-items-center flex-grow-1">
                 <ul class="navbar-nav">
                     <li class="nav-item navbar2">
@@ -51,7 +51,7 @@
                     </li>
                 </ul>
             </div>
-            <form class="form-inline my-2 my-lg-0 mr-auto mr-4">
+            <form class="form-inline my-2 my-lg-0 mr-auto mr-2">
                 <input class="form-control mr-sm-2" type="search" placeholder="Zoek een item" aria-label="Search">
                 <button class="btn btn-outline-light my-2 my-sm-0 bg-primary" type="submit">Zoek</button>
             </form>

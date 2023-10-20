@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <!--Font // Google Font connectie -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
         <!--Navbar 2 (onderste)-->
         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
             <div class="container">
-                <img src="/logopng.png" title="Nerdy Gadgets" width="50" class="logo">
+                <img src="image/logopng.png" title="Nerdy Gadgets" width="150" class="logo">
                 <div class="d-flex justify-content-center align-items-center flex-grow-1">
                     <ul class="navbar-nav">
                         <li class="nav-item navbar2">
@@ -61,19 +61,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NerdgyGadgets.nl</title>
-    <link rel="stylesheet" type="text/css" href="/productpagina.css">
+    <link rel="stylesheet" type="text/css" href="CSS/productpagina.css">
 </head>
 <body>
 <div class="product-container">
     <div class="product-title">Apple MacBook Air (2020) MGN63N/A - 13.3 inch - Apple M1 - 256 GB - Space Grey</div>
     <div class="product-image">
-        <img src="/product_images/4GPNDDRJp92J.jpg" title="Macbook Air" width="100px">
-    </div>
+        <img src="/product_images/4GPNDDRJp92J.jpg" title="Macbook Air">
     <div class="product-price">€999.99</div>
     <div class="product-description"> Deze Macbook Air is geschikt voor alledaagse taken en is het dunste en lichtste notebook ooit gemaakt door Apple.<br>
         Voorzien van een krachtige Apple M1 chip, True Tone Retina beeldscherm, Magic Keyboard, Touch ID vingerafdruksensor en een batterijduur tot wel 18 uur lang.<br><br>
         Sneller en betere prestaties De Apple M1 processor is speciaal ontworpen voor de Macbook. De processor is energiezuiniger en veel krachtiger dan de Intel processoren die voorheen in de oude modellen zaten.</div>
     <button class="cta-button">Add to Cart</button>
+    </div>
 </div>
 
 <footer>

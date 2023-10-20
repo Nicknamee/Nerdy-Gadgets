@@ -2,10 +2,15 @@
 * {
     font-family: 'Rubik', sans-serif;
 }
+/*Header */
 /* NAVBAR2 */
+.logo {
+    width: 180px;
+    padding-top: 0;
+}
 .navbar2 a{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 0;
 }
 
