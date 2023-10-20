@@ -1,0 +1,54 @@
+/* winkelwagen.css */
+
+/* ... (your existing styles) ... */
+
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7; /* Match background color from your existing code */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: royalblue; /* Match the heading color */
+}
+
+.cart-product {
+    display: flex;
+    border-bottom: 1px solid black; /* Match the border color */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-product img {
+    max-width: 80px;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-details p {
+    margin: 0;
+    color: #333; /* Adjust text color */
+}
+
+/* Button styles */
+.cart-product form {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Add additional styles as needed */

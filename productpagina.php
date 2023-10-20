@@ -58,21 +58,21 @@
                 </form>
             </div>
         </nav>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NerdgyGadgets.nl</title>
-    <link rel="stylesheet" type="text/css" href="CSS/productpagina.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NerdgyGadgets.nl</title>
+        <link rel="stylesheet" type="text/css" href="CSS/productpagina.css">
 </head>
 <body>
 <div class="product-container">
     <div class="product-title">Apple MacBook Air (2020) MGN63N/A - 13.3 inch - Apple M1 - 256 GB - Space Grey</div>
     <div class="product-image">
         <img src="/product_images/4GPNDDRJp92J.jpg" title="Macbook Air">
-    <div class="product-price">€999.99</div>
-    <div class="product-description"> Deze Macbook Air is geschikt voor alledaagse taken en is het dunste en lichtste notebook ooit gemaakt door Apple.<br>
-        Voorzien van een krachtige Apple M1 chip, True Tone Retina beeldscherm, Magic Keyboard, Touch ID vingerafdruksensor en een batterijduur tot wel 18 uur lang.<br><br>
-        Sneller en betere prestaties De Apple M1 processor is speciaal ontworpen voor de Macbook. De processor is energiezuiniger en veel krachtiger dan de Intel processoren die voorheen in de oude modellen zaten.</div>
-    <button class="cta-button">Add to Cart</button>
+        <div class="product-price">€999.99</div>
+        <div class="product-description"> Deze Macbook Air is geschikt voor alledaagse taken en is het dunste en lichtste notebook ooit gemaakt door Apple.<br>
+            Voorzien van een krachtige Apple M1 chip, True Tone Retina beeldscherm, Magic Keyboard, Touch ID vingerafdruksensor en een batterijduur tot wel 18 uur lang.<br><br>
+            Sneller en betere prestaties De Apple M1 processor is speciaal ontworpen voor de Macbook. De processor is energiezuiniger en veel krachtiger dan de Intel processoren die voorheen in de oude modellen zaten.</div>
+        <button class="cta-button">Add to Cart</button>
     </div>
 </div>
 
