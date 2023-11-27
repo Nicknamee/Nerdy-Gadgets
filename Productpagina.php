@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -72,7 +73,7 @@
     <div class="product-description"> Deze Macbook Air is geschikt voor alledaagse taken en is het dunste en lichtste notebook ooit gemaakt door Apple.<br>
         Voorzien van een krachtige Apple M1 chip, True Tone Retina beeldscherm, Magic Keyboard, Touch ID vingerafdruksensor en een batterijduur tot wel 18 uur lang.<br><br>
         Sneller en betere prestaties De Apple M1 processor is speciaal ontworpen voor de Macbook. De processor is energiezuiniger en veel krachtiger dan de Intel processoren die voorheen in de oude modellen zaten.</div>
-    <button class="cta-button">Add to Cart</button>
+    <button class="cta-button" on-click="addToWinkelwagen()"> Add to Cart</button>
     </div>
 </div>
 
@@ -100,5 +101,7 @@
 
     </div>
 </footer>
+<div id="winkelwagen-container"></div>
+<script src="winkelwagen.js"></script>
 </body>
 </html>
