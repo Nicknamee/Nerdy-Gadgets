@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+
+    $mysqli = require __DIR__ . "/connect.php";
+
+    $sql = "SELECT * FROM user
+            WHERE id = {$_SESSION["user_id"]}";
+
+    $result = $mysqli->query($sql);
+
+    $user = $result->fetch_assoc();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -8,6 +24,7 @@
 include('header.php'); //-- Header --//
 ?>
 <body>
+
 <div class="typewriter-container">
     <div class="container">
         <div class="row">
