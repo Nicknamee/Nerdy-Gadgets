@@ -108,6 +108,17 @@
     object-fit: cover;
 }
 
+.navcart-button {
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+}
+
 .product-card .card-body {
     padding: 15px;
 }
