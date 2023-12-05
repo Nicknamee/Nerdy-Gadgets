@@ -15,44 +15,42 @@
 <body>
 <div class="father">
     <div class="filter-container">
+        <form action="" method="GET"
         <!-- Include the filter options from the old version -->
-        <h2>Filter</h2>
-        <div class="category-filter">
-            <h3>Categorieën</h3>
-            <ul>
-                <li><input type="checkbox" id="laptops"> <label for="laptops">Laptops</label></li>
-                <li><input type="checkbox" id="computers"> <label for="computers">Computers</label></li>
-                <li><input type="checkbox" id="computer-parts"> <label for="computer-parts">Computer-onderdelen</label></li>
-                <li><input type="checkbox" id="routers"> <label for="routers">Routers</label></li>
-                <li><input type="checkbox" id="phones"> <label for="phones">Telefoons</label></li>
-                <li><input type="checkbox" id="network-equipment"> <label for="network-equipment">Netwerkapparatuur</label></li>
-                <!-- ... (copy the rest of the category filter options) ... -->
-            </ul>
-        </div>
-        <div class="category-filter">
-            <h3>Merken</h3>
-            <ul>
-                <li><input type="checkbox" id="apple"> <label for="apple">Apple</label></li>
-                <li><input type="checkbox" id="samsung"> <label for="samsung">Samsung</label></li>
-                <li><input type="checkbox" id="asus"> <label for="asus">ASUS</label></li>
-                <li><input type="checkbox" id="msi"> <label for="msi">MSI</label></li>
-                <li><input type="checkbox" id="lenovo"> <label for="lenovo">Lenovo</label></li>
-                <li><input type="checkbox" id="intel"> <label for="intel">Intel</label></li>
-                <li><input type="checkbox" id="amd"> <label for="amd">AMD</label></li>
-                <!-- ... (copy the rest of the brand filter options) ... -->
-            </ul>
-        </div>
-        <div class="price-filter">
-            <h3>Prijsfilter</h3>
-            <div class="price-range">
-                <span class="range-label">Min: €</span>
-                <input type="text" class="min-price">
-                <span class="range-label">Max: €</span>
-                <input type="text" class="max-price">
+
+            <h2>Filter</h2>
+            <div class="category-filter">
+                <h3>Categorieën</h3>
+                <ul>
+                    <li><input type="checkbox" id="laptops"> <label for="laptops">Laptops</label></li>
+                    <li><input type="checkbox" id="computers"> <label for="computers">Computers</label></li>
+                    <li><input type="checkbox" id="computer-parts"> <label for="computer-parts">Computer-onderdelen</label></li>
+                    <li><input type="checkbox" id="routers"> <label for="routers">Routers</label></li>
+                    <li><input type="checkbox" id="phones"> <label for="phones">Telefoons</label></li>
+                    <li><input type="checkbox" id="network-equipment"> <label for="network-equipment">Netwerkapparatuur</label></li>
+                    <!-- ... (copy the rest of the category filter options) ... -->
+                </ul>
             </div>
-            <button class="filter-button">Filteren</button>
-        </div>
+
+            <div class="price-filter">
+                <h3>Prijsfilter</h3>
+                <div class="price-range">
+                    <span class="range-label">Min: €</span>
+                    <input type="text" name="start_price" value="" class="form-control">
+                    <span class="range-label">Max: €</span>
+                    <input type="text" name="end_price" value="" class="form-control">
+                </div>
+
+                <label for="sort_order">Sorteer op:</label>
+                <select name="sort_order" id="sort_order">
+                    <option value="default" selected>Standaard</option>
+                    <option value="asc">Prijs laag naar hoog</option>
+                    <option value="desc">Prijs hoog naar laag</option>
+                </select>
+                <button type="submit" class="btn btn-primary px-4">Filteren</button>
+            </div>
         <!-- ... (other filters) ... -->
+        </form>
     </div>
 
     <div class="product-container">
@@ -68,7 +66,27 @@
                     <div class='productList'>
             ";
 
-            $query = "SELECT * from product WHERE category = '{$category}'";
+            // Voeg de categorie-filtering toe aan de query
+            $query = "SELECT * FROM product WHERE category = '{$category}'";
+
+            // Voeg de prijsfilter toe aan de query als deze is ingevuld
+            if (isset($_GET['start_price']) && isset($_GET['end_price']) && $_GET['start_price'] !== '' && $_GET['end_price'] !== '') {
+                $startprice = $_GET['start_price'];
+                $endprice = $_GET['end_price'];
+                $query .= "AND price BETWEEN $startprice AND $endprice";
+            }
+
+            // Voeg de zoekterm toe aan de query als deze is ingevuld
+            if (isset($_GET['search']) && $_GET['search'] !== '') {
+                $searchTerm = $_GET['search'];
+                $query .= " AND name LIKE '%$searchTerm%'";
+            }
+
+            // Voeg de sorteerorder toe als deze is geselecteerd
+            if (isset($_GET['sort_order']) && ($_GET['sort_order'] == 'asc' || $_GET['sort_order'] == 'desc')) {
+                $query .= "ORDER BY price {$_GET['sort_order']}";
+            }
+
             $result = $conn->query($query);
 
             foreach ($result as $row) {
