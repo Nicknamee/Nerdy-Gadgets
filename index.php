@@ -68,7 +68,7 @@ include('header.php'); //-- Header --//
         foreach ($result as $row) {
             $productName = $row['name'];
             $productPrice = $row['price'];
-            $productImage = $row['image'];
+            $productImage = $row['image']; 
 
             echo "
                     <div class='productClass'>

@@ -4,7 +4,7 @@
     <div class= "footerContainer">
         <div class="socialIcons">
             <a href=""><i class="fa-brands fa-facebook "></i></a>
-            <a href=""><i class="fa-brands fa-instagram "></i></a>
+            <a href="https://www.instagram.com/p/CuoxLIvr6xV/?img_index=1"> <i class="fa-brands fa-instagram "></i></</a>
             <a href=""><i class="fa-brands fa-twitter "></i></a>
             <a href=""><i class="fa-brands fa-google plus "></i></a>
 
