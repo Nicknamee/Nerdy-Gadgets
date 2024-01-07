@@ -1,17 +1,18 @@
 <?php
-<configuration>
-<system.web>
-   <sessionState timeout="10"></sessionState>
-</system.web>
-</configuration>
+print("Voer de leeftijd van Anna in:\n");
+$anna = trim(fgets(STDIN));
 
-<forms 
-   timeout="10">
-</forms>
+print("Voer de leeftijd van Bob in:\n");
+$bob = trim(fgets(STDIN));
 
-<forms    
-   timeout="10"
-   slidingExpiration="true">
-</forms>
-//teset
+if ($anna > $bob) {
+    print ("Anna is ouder dan Bob");
+} else {
+    if ($bob > $anna) {
+        print ("bob is ouder dan anna");
+    } else {
+        print ("evenoud");
+    }
+}
 ?>
+

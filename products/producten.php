@@ -93,13 +93,16 @@
                 $productName = $row['name'];
                 $productPrice = $row['price'];
                 $productImage = $row['image'];
+                $productid = $row['id'];
 
                 echo "
                     <div class='productClass'>
-                        <a href='../Productpagina.php'>
-                            <img class='productImg' src='../product_images/{$productImage}.jpg' alt='{$productName}'>
+                        <form action='../productpagina.php' method='GET'>
+                        <input type='hidden' id='productid' name='productid' value={$productid}>
+                           <input type='image' class='productImg' src='../product_images/{$productImage}.jpg' alt='{$productName}'>
                             <div class='productName'>{$productName}</div>
-                        </a>
+                        
+                        </form>
                         <div class='cart-button'>
                             <button class='fa fa-shopping-cart buttonName' onclick='addToCart({$row['id']}, encodeURIComponent(\"{$productName}\"), {$productPrice})'></button>
                             <span class='productPrice'>€ {$productPrice}</span>
