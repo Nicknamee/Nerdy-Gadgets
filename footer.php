@@ -10,11 +10,11 @@
 
         </div>
         <div class="footernav">
-            <ul> <li><a href="">about us</a> </li>
-                <li><a href="">contact us</a> </li>
-                <li><a href="">get a job</a> </li>
-                <li><a href="">our team </a> </li>
-                <li><a href="">customer service </a> </li>
+            <ul> <li><a href="about%20us.php">about us</a> </li>
+                <li><a href="contact%20us.php">contact us</a> </li>
+                <li><a href="get%20a%20job.php">get a job</a> </li>
+                <li><a href="our%20team.php">our team </a> </li>
+                <li><a href="customer%20service.php">customer service </a> </li>
 
             </ul>
         </div>
