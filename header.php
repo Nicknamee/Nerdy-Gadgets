@@ -17,13 +17,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="help.php">Help</a>
+                    <a class="nav-link" href="../help.php">Help</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
+                    <a class="nav-link" href="../login.php">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                    <a class="nav-link" href="../contact.php">Contact</a>
                 </li>
             </ul>
         </div>
@@ -37,19 +37,16 @@
             <div class="d-flex justify-content-center align-items-center flex-grow-1">
                 <ul class="navbar-nav">
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Games</a>
+                        <a class="nav-link" href="/Nerdy-Gadgets/products/producten.php?search=apple">Apple</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Gadgets</a>
+                        <a class="nav-link" href="/Nerdy-Gadgets/products/producten.php?search=samsung">Samsung</a>
                     </li>
                     <li class="nav-item navbar2">
                         <a class="nav-link" href="/Nerdy-Gadgets/products/producten.php">Producten</a>
                     </li>
                     <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Aanbiedingen</a>
-                    </li>
-                    <li class="nav-item navbar2">
-                        <a class="nav-link" href="#">Nieuw!</a>
+                        <a class="nav-link" href="/Nerdy-Gadgets/products/producten.php?search=lenovo">Lenovo</a>
                     </li>
                 </ul>
             </div>
